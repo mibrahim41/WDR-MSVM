@@ -1,0 +1,243 @@
+figure(1)
+subplot(4,2,1)
+load imbalance_experiment_4classes_3features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('3 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,2)
+load imbalance_experiment_4classes_3features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('3 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,3)
+load imbalance_experiment_4classes_5features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('5 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,4)
+load imbalance_experiment_4classes_5features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('5 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,5)
+load imbalance_experiment_4classes_15features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('15 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,6)
+load imbalance_experiment_4classes_15features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('15 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,7)
+load imbalance_experiment_4classes_30features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('30 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,8)
+load imbalance_experiment_4classes_30features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('30 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+% sgtitle('WDR-MSVM Accuracy vs. Parameter Values, 4 Classes','Interpreter','Latex')
+
+figure(2)
+subplot(4,2,1)
+load imbalance_experiment_8classes_3features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('3 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,2)
+load imbalance_experiment_8classes_3features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('3 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,3)
+load imbalance_experiment_8classes_5features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('5 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,4)
+load imbalance_experiment_8classes_5features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('5 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,5)
+load imbalance_experiment_8classes_15features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('15 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,6)
+load imbalance_experiment_8classes_15features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('15 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,7)
+load imbalance_experiment_8classes_30features_balanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('30 Features, Balanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+
+subplot(4,2,8)
+load imbalance_experiment_8classes_30features_imbalanced.mat
+surf(epsilon_mesh,kappa_mesh,acc_mat_ova')
+xlabel('$\varepsilon$',Interpreter='latex')
+ylabel('$\kappa$',Interpreter='latex')
+zlabel('mCCR',Interpreter='latex')
+set(gca,'xscale','log')
+title('30 Features, Imbalanced',Interpreter='latex')
+grid on
+view([30 25])
+xticks([1e-6,1e-4,1e-2,1e0])
+yticks([0 0.2 0.4 0.6 0.8 1])
+zticks([0 0.2 0.4 0.6 0.8 1])
+axis([1e-7 1e1 0 1 0 1])
+% sgtitle('WDR-MSVM Accuracy vs. Parameter Values, 8 Classes','Interpreter','Latex')
